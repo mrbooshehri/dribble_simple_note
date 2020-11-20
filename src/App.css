@@ -3,12 +3,35 @@
 }
 
 .menu__button {
+  display: inline-block;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
-  text-decoration: none;
-  border: none;
   border-bottom-right-radius: 40%;
-  color: white1;
+  color: white;
+}
+
+.menuItem {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  justify-content: left;
+  align-items: center;
+}
+.menuItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menuItem a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.menuItem span {
+  color: white;
+  background-color: white;
 }
 
 .container--fullHight,

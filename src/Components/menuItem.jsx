@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import "../App.css";
 class MenuItem extends Component {
   state = {};
-  render() {
+  render(props) {
     return (
-      <div>
-        <a href="http://www.google.com">click me</a>
+      <div className="menuItem">
+        <span className={this.props.isVisible}>xx</span>
+        <a href="#">{this.props.title}</a>
       </div>
     );
   }

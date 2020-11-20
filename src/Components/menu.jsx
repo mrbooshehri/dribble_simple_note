@@ -7,13 +7,13 @@ class Menu extends Component {
   render() {
     return (
       <div className="col-2 p-0 menu menu--fullHight">
-        <button className="menu__button">
+        <a href="#" className="menu__button ">
           <MenuIcon />
-        </button>
-        <div className="mt-4 ml-3">
-          <MenuItem title="Personal" />
-          <MenuItem />
-          <MenuItem />
+        </a>
+        <div className="mt-3">
+          <MenuItem title="Personal" isVisible="visible" />
+          <MenuItem title="Work" isVisible="invisible" />
+          <MenuItem title="Up coming" isVisible="invisible" />
         </div>
       </div>
     );
