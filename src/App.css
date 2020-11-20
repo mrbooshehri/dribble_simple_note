@@ -34,7 +34,48 @@
   background-color: white;
 }
 
+.noteList {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 100vh;
+}
+
+.noteListItem {
+  padding: 20px;
+}
+
+.noteListItem__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.noteListItem__header__title {
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.noteListItem__header__time {
+  color: gray;
+  margin: 0;
+}
+.noteListItem__body {
+  margin: 0;
+  color: gray;
+}
+
+.noteListItem:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .container--fullHight,
 .menu--fullHight {
   height: 100vh;
+}
+
+.noteList::-webkit-scrollbar {
+  display: none;
+}
+.noteList {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
